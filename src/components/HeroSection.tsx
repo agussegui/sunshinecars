@@ -7,30 +7,29 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 w-full h-full">
-         <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 md:mt-0 mt-14">
         <div className="text-center">
           <h1 className="text-4xl md:text-7xl font-contrail-one mb-6 leading-tight">
-            <span className="block text-white">Lavados a domicilio,</span>
-            <span className="block text-orange-400">simples de entender</span>
+            <span className="block text-white">Lavados profesionales a domicilio,</span>
+            <span className="block text-orange-400">sin vueltas</span>
           </h1>
-          <p className="text-gray-300 md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-raleway">
-            Hacemos que tu auto (o tu flota) quede prolijo sin complicaciones.
-            Elegí un plan y te contamos en claro qué hacemos, cuánto tarda y
-            cómo queda.
-          </p>
+          
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
-              A domicilio
+              El cuidado que tu auto necesita, donde vos lo necesitás
             </div>
             <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
-              Sin letra chica
+              Manos expertas. Cuidado real
             </div>
             <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
-              Duración estimada
+              La sensación de auto como nuevo. Sin salir de casa
             </div>
           </div>
+          <p className="text-gray-300 md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-raleway">
+            Zona La Plata y alrededores. Elegí un plan y te contamos en palabras claras qué hacemos, cuánto tarda y cómo queda. Tu auto perfecto, sin que te muevas de tu casa.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="sm"

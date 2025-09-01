@@ -23,11 +23,11 @@ const AboutSection = () => {
           {/* Image Column - Right */}
           <div className="order-1 lg:order-2">
             <div className="relative">
-              <div className="relative overflow-hidden rounded-3xl border border-orange-500/30 shadow-2xl">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
                   src="../rangergrupo.jpeg"
                   alt="Equipo de Sunshine Cars trabajando profesionalmente en detailing automotriz"
-                  className="w-full h-96 md:h-96 lg:h-[620px] object-cover object-center"
+                  className="w-full h-96 md:h-96 lg:h-[650px] object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 
