@@ -2,6 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.tsx"
 import "./index.css"
+import WhatsAppFloat from "./components/WhatsAppFloat.tsx"
 
 const contrailLink = document.createElement("link")
 contrailLink.href =
@@ -18,5 +19,6 @@ document.head.appendChild(gillSansLink)
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
+    <WhatsAppFloat />
   </React.StrictMode>,
 )

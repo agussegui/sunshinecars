@@ -31,7 +31,7 @@ const CallToActionSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm font-raleway">
             <p>Sunshine - Cuidamos tu auto como si fuera el nuestro</p>
-            <div className="flex space-x-8 mt-4 md:mt-0">
+            <div className="flex space-x-4 md:space-x-8 mt-4 md:mt-0">
               <a href="#servicios" className="hover:text-white transition-colors">Servicios</a>
               <a href="#nosotros" className="hover:text-white transition-colors">Quiénes somos</a>
               <a href="#faq" className="hover:text-white transition-colors">FAQs</a>

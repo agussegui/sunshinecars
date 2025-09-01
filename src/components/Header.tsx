@@ -119,8 +119,14 @@ const Header = () => {
               <Button
                 size="sm"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-full font-medium transition-all duration-300 font-raleway text-lg"
+                onClick={() =>
+                window.open(
+                  "https://wa.me/5491173665464?text=Hola! Quiero coordinar un turno para el lavado de mi auto",
+                  "_blank",
+                )
+              }
               >
-                RESERVAR
+                Pedir Turno
               </Button>
             </div>
           </nav>

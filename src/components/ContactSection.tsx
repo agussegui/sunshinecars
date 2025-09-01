@@ -148,7 +148,7 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 flex-1"
+                className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-md md:text-lg transition-all duration-300 hover:scale-105 flex-1"
                 onClick={() =>
                   window.open(
                     "https://wa.me/5491173665464?text=Hola! Me interesa agendar un servicio de lavado de auto",
@@ -163,7 +163,7 @@ const ContactSection = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 flex-1"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white  px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold text-md md:text-lg transition-all duration-300 hover:scale-105 flex-1"
                 onClick={() => window.open("http://www.instagram.com/sunshinecars.arg", "_blank")}
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">

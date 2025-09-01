@@ -7,14 +7,7 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 w-full h-full">
-        {/* <video autoPlay muted loop playsInline className="w-full h-full object-cover">
-          <source
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/158316-816359649-sGPv94J2Wu2o5BsungHBQwumfEeM72.mp4"
-            type="video/mp4"
-          />
-        </video> */}
-        <img src="../" />
-        <div className="absolute inset-0 bg-black/60"></div>
+         <div className="absolute inset-0 bg-black/60"></div>
       </div>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 md:mt-0 mt-14">
         <div className="text-center">
