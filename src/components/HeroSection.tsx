@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="py-32 relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-black/60"></div>
