@@ -1,4 +1,3 @@
-"use client"
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
@@ -31,7 +30,7 @@ const Header = () => {
     <>
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrollY > 50 ? "bg-black/95 backdrop-blur-lg" : "lg:bg-transparent bg-black/90"
+          scrollY > 50 ? "bg-black/95 " : " bg-black/90"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -40,17 +39,17 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={scrollToTop}
-                  className="bg-gradient-radial from-pink-500 via-purple-600 to-black px-4 py-2 md:px-8 md:py-4 rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300"
+                  style={{ height: '96px', width: '180px', overflow: 'visible', background: 'transparent', display: 'flex', alignItems: 'center' }}
                 >
-                  <h1
-                    className="font-contrail-one text-white tracking-wider leading-tight"
-                    style={{ fontFamily: "var(--font-contrail-one)", fontWeight: 200 }}
-                  >
-                    <span className="text-2xl md:text-4xl font-bold">SUNSHINE</span>{" "}
-                    <span className="text-lg md:text-2xl font-contrail-one italic">CARS</span>
-                  </h1>
+                  <div style={{ position: 'absolute', left: '-50px', top: '50%', transform: 'translateY(-50%)', width: '290px', height: '180px', pointerEvents: 'none', zIndex: 1 }}>
+                    <img
+                      src="/sunshinecarsfondo.png"
+                      alt="Logo Sunshine Cars"
+                      style={{ width: '290px', height: '180px', objectFit: 'contain', display: 'block' }}
+                    />
+                  </div>
                 </button>
-                <div className="absolute inset-0 bg-gradient-radial from-pink-500 via-purple-600 to-black rounded-xl blur-xl opacity-40 -z-10"></div>
+                
               </div>
             </div>
             <nav className="hidden lg:flex space-x-8 xl:space-x-12">
@@ -72,7 +71,7 @@ const Header = () => {
             </nav>
             <Button
               size="sm"
-              className="hidden lg:block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full font-medium transition-all duration-300 font-raleway text-md cursor-pointer"
+              className="hidden lg:block bg-[#920563] hover:bg-[#8b044c] text-white px-4 py-2 xl:px-6 xl:py-2 rounded-full font-medium transition-all duration-300 font-raleway text-md cursor-pointer"
               onClick={() =>
                 window.open(
                   "https://wa.me/5491173665464?text=Hola! Quiero coordinar un turno para el lavado de mi auto",

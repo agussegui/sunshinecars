@@ -9,21 +9,21 @@ const HeroSection = () => {
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 md:mt-0 mt-14">
+      <div className="mx-auto px-6 lg:px-8 relative z-10 md:mt-0 mt-14">
         <div className="text-center">
           <h1 className="text-4xl md:text-7xl font-contrail-one mb-6 leading-tight">
-            <span className="block text-white">Lavados profesionales a domicilio,</span>
-            <span className="block text-orange-400">sin vueltas</span>
+            <span className="text-white">Lavados profesionales a domicilio,</span>
+            <span className="text-orange-400">sin vueltas</span>
           </h1>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
+            <div className=" px-4 py-2 rounded-full text-md font-raleway">
               El cuidado que tu auto necesita, donde vos lo necesitás
             </div>
-            <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
+            <div className=" px-4 py-2 rounded-full text-md font-raleway">
               Manos expertas. Cuidado real
             </div>
-            <div className="bg-gray-900/70 px-4 py-2 rounded-full text-sm font-raleway">
+            <div className=" px-4 py-2 rounded-full text-md font-raleway">
               La sensación de auto como nuevo. Sin salir de casa
             </div>
           </div>

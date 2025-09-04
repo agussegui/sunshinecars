@@ -64,7 +64,7 @@ const ServicesSection = () => {
       image: "../shinetumedida.jpeg",
     },
     {
-      title: "💧 Lavado en seco",
+      title: "Lavado en seco",
       duration: "Variable",
       description: "Usa poca o nada de agua → ideal para lugares sin canilla.",
       details: [
@@ -101,7 +101,7 @@ const ServicesSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {services.slice(0, 4).map((service, index) => (
               <div key={index}>
-                <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-orange-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/10 h-full flex flex-col">
+                <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-[#920563] transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/10 h-full flex flex-col">
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <img
                       src={service.image || "/placeholder.svg"}
@@ -117,7 +117,7 @@ const ServicesSection = () => {
                         <h3 className="text-xl font-contrail-one text-white mb-1 drop-shadow-lg bg-slate-900/90 px-3 py-1 rounded-2xl ">
                           {service.title}
                         </h3>
-                        <div className="bg-orange-500/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold font-raleway">
+                        <div className="bg-[#920563] backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold font-raleway">
                           {service.duration}
                         </div>
                       </div>
@@ -136,7 +136,7 @@ const ServicesSection = () => {
                       <ul className="text-sm text-gray-300 space-y-2">
                         {service.details.map((detail, detailIndex) => (
                           <li key={detailIndex} className="flex items-start">
-                            <span className="text-orange-400 mr-3 mt-1">●</span>
+                            <span className="text-[#8b044c] mr-3 mt-1">●</span>
                             <span className="font-raleway leading-relaxed">
                               {detail}
                             </span>
@@ -156,7 +156,7 @@ const ServicesSection = () => {
 
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
+                      className="bg-gradient-to-r from-[#920563] to-[#8b044c] hover:from-[#920563] hover:to-[#8b044c] text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
                       onClick={() => {
                         const message = `Hola! Me interesa el ${service.title}. ¿Podrían darme más información?`;
                         const whatsappUrl = `https://wa.me/5491173665464?text=${encodeURIComponent(
@@ -177,7 +177,7 @@ const ServicesSection = () => {
           {services[4] && (
             <div className="flex justify-center">
               <div className="w-full max-w-xl">
-                <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-orange-400/60 transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/10 h-full">
+                <div className="bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden hover:border-[#920563] transition-all duration-300 hover:shadow-lg hover:shadow-orange-400/10 h-full">
                   <div className="relative aspect-[16/9] overflow-hidden">
                     <img
                       src={services[4].image || "/placeholder.svg"}
@@ -193,7 +193,7 @@ const ServicesSection = () => {
                         <h3 className="text-xl font-contrail-one text-white mb-1 drop-shadow-lg bg-slate-900/90 rounded-xl px-3 py-1">
                           {services[4].title}
                         </h3>
-                        <div className="bg-orange-500/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold font-raleway">
+                        <div className="bg-[#920563] backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold font-raleway">
                           {services[4].duration}
                         </div>
                       </div>
@@ -212,7 +212,7 @@ const ServicesSection = () => {
                       <ul className="text-sm text-gray-300 space-y-2">
                         {services[4].details.map((detail, detailIndex) => (
                           <li key={detailIndex} className="flex items-start">
-                            <span className="text-orange-400 mr-3 mt-1">●</span>
+                            <span className="text-[#8b044c] mr-3 mt-1">●</span>
                             <span className="font-raleway leading-relaxed">
                               {detail}
                             </span>
@@ -232,7 +232,7 @@ const ServicesSection = () => {
 
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25"
+                      className="bg-gradient-to-r from-[#920563] to-[#8b044c] hover:from-[#920563] hover:to-[#8b044c] text-white font-semibold rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
                       onClick={() => {
                         const message = `Hola! Me interesa el ${services[4].title}. ¿Podrían darme más información?`;
                         const whatsappUrl = `https://wa.me/5491173665464?text=${encodeURIComponent(

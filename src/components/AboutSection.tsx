@@ -11,13 +11,17 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
           {/* Text Column - Left */}
           <div className="order-2 lg:order-1">
-            <p className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg leading-relaxed sm:leading-loose font-raleway">
-              En Sunshine creemos que un auto impecable no tiene por qué ser complicado. Somos un equipo joven y
-              apasionado por el detalle, que decidió llevar el car detailing a la puerta de tu casa. Nuestra misión es
-              simple: cuidar tu vehículo como si fuera el nuestro, combinando precisión técnica, productos de calidad y
-              un trato humano y cercano. Nos importa tanto el resultado como tu experiencia: queremos que disfrutes la
-              comodidad de no moverte de tu casa, con la tranquilidad de saber que tu auto queda en manos expertas.
-            </p>
+            <div className="text-gray-300 text-base sm:text-lg md:text-xl lg:text-lg leading-relaxed sm:leading-loose font-raleway space-y-6">
+              <p>
+                En Sunshine creemos que un auto impecable no tiene por qué ser complicado. Somos un equipo joven y apasionado por el detalle, que decidió llevar el car detailing a la puerta de tu casa.
+              </p>
+              <p>
+                Nuestra misión es simple: cuidar tu vehículo como si fuera el nuestro, combinando precisión técnica, productos de calidad y un trato humano y cercano.
+              </p>
+              <p>
+                Nos importa tanto el resultado como tu experiencia: queremos que disfrutes la comodidad de no moverte de tu casa, con la tranquilidad de saber que tu auto queda en manos expertas.
+              </p>
+            </div>
           </div>
 
           {/* Image Column - Right */}
