@@ -97,7 +97,7 @@ const Header = () => {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="pt-24 px-6">
+        <div className="pt-32 px-6">
           <nav className="space-y-4">
             {[
               { name: "NOSOTROS", id: "nosotros" },
@@ -109,7 +109,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.id)}
-                className="block text-gray-300 hover:text-orange-400 hover:bg-gray-800/50 transition-all duration-300 py-4 px-4 w-full text-left font-raleway rounded-md text-lg"
+                className="block text-gray-300 hover:text-orange-400 transition-all duration-300 py-4 px-4 w-full text-left font-raleway rounded-md text-lg"
               >
                 {item.name}
               </button>
@@ -117,7 +117,7 @@ const Header = () => {
             <div className="pt-6">
               <Button
                 size="sm"
-                className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-full font-medium transition-all duration-300 font-raleway text-lg"
+                className="w-full bg-[#920563] hover:bg-[#8b044c] text-white py-4 rounded-full font-medium transition-all duration-300 font-raleway text-lg"
                 onClick={() =>
                 window.open(
                   "https://wa.me/5491173665464?text=Hola! Quiero coordinar un turno para el lavado de mi auto",

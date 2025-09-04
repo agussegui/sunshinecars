@@ -84,7 +84,7 @@ const ServicesSection = () => {
   return (
     <section
       id="servicios"
-      className="py-32 bg-gradient-to-br from-gray-950 via-black to-gray-950"
+      className="py-36 bg-gradient-to-br from-gray-950 via-black to-gray-950"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
@@ -241,7 +241,7 @@ const ServicesSection = () => {
                         window.open(whatsappUrl, "_blank");
                       }}
                     >
-                      {services[4].action || "PEDIR TURNO"}
+                      {services[4].action || "Pedir Turno"}
                     </Button>
                   </div>
                 </div>

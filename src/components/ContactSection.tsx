@@ -32,7 +32,7 @@ const ContactSection = () => {
   return (
     <section
       id="contacto"
-      className="py-32 bg-gradient-to-br from-gray-800 via-black to-gray-800 overflow-hidden"
+      className="py-36 bg-gradient-to-br from-gray-800 via-black to-gray-800 overflow-hidden"
       ref={contactRef}
       data-section="contact"
     >

@@ -5,7 +5,7 @@ const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="py-32 bg-gradient-to-br from-gray-950 via-black to-gray-950 transition-all duration-1000">
+    <section id="faq" className="py-36 bg-gradient-to-br from-gray-950 via-black to-gray-950 transition-all duration-1000">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-contrail-one mb-8 leading-tight text-white">Preguntas frecuentes</h2>
@@ -42,7 +42,7 @@ const FAQSection = () => {
                 <div className="flex items-center justify-between">
                   <h4 className="text-lg font-contrail-one text-white">{faq.question}</h4>
                   <span
-                    className={`text-orange-400 text-xl transition-transform duration-300 ${openFAQ === index ? "rotate-90" : ""}`}
+                    className={`text-[#920563] text-xl transition-transform duration-300 ${openFAQ === index ? "rotate-90" : ""}`}
                   >
                     ▶
                   </span>

@@ -42,7 +42,7 @@ const PartnersSection = () => {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group bg-gray-950 rounded-3xl border border-gray-800 p-8 hover:border-orange-500/50 transition-all duration-500 hover:transform hover:scale-105 flex flex-col"
+              className="group bg-gray-950 rounded-3xl border border-gray-800 p-8 hover:border-[#8b044c]/50 transition-all duration-500 hover:transform hover:scale-105 flex flex-col"
             >
               <div className="text-center mb-6">
                 {/* Logo centrado con flex */}

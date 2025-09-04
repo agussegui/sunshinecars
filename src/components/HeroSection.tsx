@@ -1,6 +1,33 @@
+import { useState, useEffect } from "react";
 import { Button } from "./ui/Button";
 
 const HeroSection = () => {
+  // Typewriter effect for headline
+  const fullText = "Lavados profesionales a domicilio, ";
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setTypedText(fullText.slice(0, i + 1));
+      i++;
+      if (i >= fullText.length) clearInterval(interval);
+    }, 40);
+    return () => clearInterval(interval);
+  }, []);
+  // Animation state for staggered fade-in
+  const [showFeatures, setShowFeatures] = useState([false, false, false]);
+
+  useEffect(() => {
+    // Staggered animation for each feature
+    const timeouts = [
+      setTimeout(() => setShowFeatures([true, false, false]), 200),
+      setTimeout(() => setShowFeatures([true, true, false]), 600),
+      setTimeout(() => setShowFeatures([true, true, true]), 1000),
+    ];
+    return () => timeouts.forEach(clearTimeout);
+  }, []);
+
   return (
     <section
       id="inicio"
@@ -12,18 +39,29 @@ const HeroSection = () => {
       <div className="mx-auto px-6 lg:px-8 relative z-10 md:mt-0 mt-14">
         <div className="text-center">
           <h1 className="text-4xl md:text-7xl font-contrail-one mb-6 leading-tight">
-            <span className="text-white">Lavados profesionales a domicilio,</span>
-            <span className="text-orange-400">sin vueltas</span>
+            <span className="text-white">{typedText}</span>
+            {typedText === fullText && (
+              <span className="text-orange-400">sin vueltas</span>
+            )}
           </h1>
-          
+          {/* Staggered fade-in features */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <div className=" px-4 py-2 rounded-full text-md font-raleway">
+            <div
+              className={`px-4 py-2 rounded-full text-md font-raleway transition-all duration-700 ${showFeatures[0] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              style={{ transitionDelay: '200ms' }}
+            >
               El cuidado que tu auto necesita, donde vos lo necesitás
             </div>
-            <div className=" px-4 py-2 rounded-full text-md font-raleway">
+            <div
+              className={`px-4 py-2 rounded-full text-md font-raleway transition-all duration-700 ${showFeatures[1] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              style={{ transitionDelay: '600ms' }}
+            >
               Manos expertas. Cuidado real
             </div>
-            <div className=" px-4 py-2 rounded-full text-md font-raleway">
+            <div
+              className={`px-4 py-2 rounded-full text-md font-raleway transition-all duration-700 ${showFeatures[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              style={{ transitionDelay: '1000ms' }}
+            >
               La sensación de auto como nuevo. Sin salir de casa
             </div>
           </div>

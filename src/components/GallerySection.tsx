@@ -62,7 +62,7 @@ const GallerySection = () => {
   return (
     <section
       id="galeria"
-      className="py-32 bg-gradient-to-br from-black via-gray-950 to-black overflow-hidden transition-all duration-1000"
+      className="py-36 bg-gradient-to-br from-black via-gray-950 to-black overflow-hidden transition-all duration-1000"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
